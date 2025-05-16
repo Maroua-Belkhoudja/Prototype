@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobDZ - Join in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/joinus.css">
+</head>
+<body>
+   <!-- Header -->
+    <header class="header">
+         <div class="logo">
+            <a href="home.html">
+                <img src="images/jobdz.png" alt="JobDZ Logo" class="logo-img">
+            </a>
+        </div>
+        
+        <div class="nav-container">
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="employers.html">Employers</a></li>
+                    <li><a href="seekers.html">Seekers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="language-switcher">
+            <button class="language-btn">
+                <i class="fas fa-globe"></i>
+                <span class="current-language">EN</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <ul class="language-dropdown">
+                <li data-lang="en">English (EN)</li>
+                <li data-lang="fr">Français (FR)</li>
+                <li data-lang="ar">العربية (AR)</li>
+            </ul>
+          </div> 
+        <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+    
+<!-- Form -->
+    <div class="containerr">
+        <!--Login form -->
+        <div class="form-box login">
+            <form action="php/login.php" method="POST">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="forgot-link">
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p>or login with social platforms </p>
+                <div class="sm-icon">
+                    <a href="#"><i class='bx bxl-google'></i></a>
+                    <a href="#"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                </div>
+                <div class="mobile-switch">
+    <p>Don't have an account? <a href="#" class="switch-link">Sign up</a></p>
+</div>
+            </form>
+        </div>
+
+
+        <!--Sing up form -->
+        <div class="form-box signup">
+            <form action="php/signup.php" method="POST">
+                <h1>Sign up</h1>
+                <div class="input-box">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <i class='bx bxs-envelope' ></i>  
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <button type="submit" class="btn">Sign up</button>
+                <p>or sign up with social platforms </p>
+                <div class="sm-icon">
+                    <a href="#"><i class='bx bxl-google'></i></a>
+                    <a href="#"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                </div>
+                <div class="mobile-switch">
+                      <p>Already have an account? <a href="#" class="switch-link">Log in</a></p>
+                    </div>
+            </form>
+        </div>
+
+    <button class="switch-form-btn">Switch to Signup</button>
+        <div class="tog-box">
+            <div class="tog-panel tog-left">
+                <h1>Hello, Welcome!</h1>
+                <p>Don't have an account?</p>
+                <button class="btn singup-btn">Sign up</button>
+            </div>
+            <div class="tog-panel tog-right">
+                <h1>Welcome Back!</h1>
+                <p>Already have an account?</p>
+                <button class="btn login-btn">Login</button>
+            </div>
+        </div>
+        
+        </div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>JobDZ</h3>
+                <p>The leading platform for job opportunities and career growth.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>For Job Seekers</h3>
+                <ul>
+                    <li><a href="#">Browse Jobs</a></li>
+                    <li><a href="#">Create Profile</a></li>
+                    <li><a href="#">Job Alerts</a></li>
+                    <li><a href="#">Career Resources</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>For Employers</h3>
+                <ul>
+                    <li><a href="#">Post Jobs</a></li>
+                    <li><a href="#">Browse Candidates</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Employer Resources</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 JobDz . All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="js/joinus.js"></script>
+</body>
+</html>

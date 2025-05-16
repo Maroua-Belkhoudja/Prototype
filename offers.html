@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Job Offers</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/seekers.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header uniquement -->
+  <header class="header">
+    <div class="logo">
+            <a href="home.html">
+                <img src="images/jobdz.png" alt="JobDZ Logo" class="logo-img">
+            </a>
+        </div>
+    
+    <div class="nav-container">
+        <nav class="nav-links">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="employers.html">Employers</a></li>
+                <li><a href="seekers.html">Seekers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="language-switcher">
+       <button class="language-btn">
+          <i class="fas fa-globe"></i>
+         <span class="current-language">EN</span>
+         <i class="fas fa-chevron-down"></i>
+       </button>
+       <ul class="language-dropdown">
+         <li data-lang="en">English (EN)</li>
+         <li data-lang="fr">Français (FR)</li>
+         <li data-lang="ar">العربية (AR)</li>
+       </ul>
+   </div> 
+    <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+</header>
+  <!-- Top categories buttons -->
+  <div class="top-categories-bar">
+    <button class="active" onclick="filterServices('all')">All</button>
+    <button onclick="filterServices('Technical')">Technology</button>
+    <button onclick="filterServices('Digital')">Marketing</button>
+    <button onclick="filterServices('Creative')">Design</button>
+    <button onclick="filterServices('Education')">Education</button>
+    <button onclick="filterServices('Administrative')">Admin</button>
+    <button onclick="filterServices('ServiceSector')">Services</button>
+    <button onclick="filterServices('Health')">Health</button>
+    <button onclick="filterServices('ECommerce')">E-commerce</button>
+    <button onclick="filterServices('Translation')">Translation</button>
+    <button onclick="filterServices('Innovation')">Innovation</button>
+    <button onclick="filterServices('Crafts')">Crafts</button>
+    <button onclick="filterServices('Consulting')">Consulting</button>
+    <button onclick="filterServices('Family')">Family</button>
+    <button onclick="filterServices('Sales')">Sales</button>
+    <button onclick="filterServices('Entertainment')">Art</button>
+    <button onclick="filterServices('Accessibility')">Accessibility</button>
+    <button onclick="filterServices('Seasonal')">Seasonal</button>
+  </div>
+    
+  <div class="cartes-container">
+    <div class="card profile-card" data-category="Technical">
+    <div class="carte-panel">
+      <div class="image-container">
+        <img src="images/mono.jfif" alt="Photo de profil">
+        <div class="image-overlay"></div>
+      </div>
+      <div class="infos-panel">
+        <h3>Yacmine Boussad</h3>
+        <div class="metier">Développeur Web & Mobile</div>
+        <div class="experience">⭐ 4.5 - 3 ans d'expérience</div>
+        <div class="prix">À partir de 6000 DZD</div>
+        <a href="#" class="btn-profil">View offer</a>
+      </div>
+    </div>
+  </div>
+      <div class="card profile-card" data-category="Technical">
+        <div class="carte-panel">
+          <div class="image-container">
+            <img src="images/m0.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+            <div class="infos-panel">
+                <h3>Ahmed Madaoui</h3>
+                <div class="metier">Database Administrator</div>
+                <div class="experience">⭐ 4.5 - 3 ans d'expérience</div>
+                <div class="prix">À partir de 6000 DZD</div>
+                <a href="seekers-profile.html" class="btn-profil">Voir le profil</a>
+            </div>
+        </div>
+      </div>
+      <div class="card profile-card" data-category="Technical">
+        <div class="carte-panel">
+          <div class="image-container">
+            <img src="images/w1.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+            <div class="infos-panel">
+                <h3>Amel Boussada</h3>
+                <div class="metier">Software Tester (QA)</div>
+                <div class="experience">⭐ 4.5 - 3 ans d'expérience</div>
+                <div class="prix">À partir de 4500 DZD</div>
+                <a href="#" class="btn-profil">Voir le profil</a>
+            </div>
+        </div>
+    </div>
+    <div class="card profile-card" data-category="Technical">
+      <div class="carte-panel">
+        <div class="image-container">
+            <img src="images/w2.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+          <div class="infos-panel">
+              <h3>Amel Boussada</h3>
+              <div class="metier">User Interface Designer (UI/UX)</div>
+              <div class="experience">⭐ 4.5 - 3 ans d'expérience</div>
+              <div class="prix">À partir de 4500 DZD</div>
+              <a href="#" class="btn-profil">Voir le profil</a>
+          </div>
+      </div>
+  </div>
+  
+  <div class="card profile-card" data-category="Digital">
+    <div class="carte-panel">
+       <div class="image-container">
+              <img src="images/w3.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+      <div class="infos-panel">
+        <h3>Yasmine K.</h3>
+        <div class="metier">Gestionnaire de campagnes publicitaires</div>
+        <div class="experience">⭐ 4.7 - 4 ans d'expérience</div>
+        <div class="prix">À partir de 4500 DZD</div>
+        <a href="#" class="btn-profil">Voir le profil</a>
+      </div>
+    </div>
+  </div>
+  <div class="card profile-card" data-category="Digital">
+    <div class="carte-panel">
+      <div class="image-container">
+             <img src="images/m1.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+      <div class="infos-panel">
+        <h3>Karim D.</h3>
+        <div class="metier">Rédacteur publicitaire (Copywriter)</div>
+        <div class="experience">⭐ 4.6 - 3 ans d'expérience</div>
+        <div class="prix">À partir de 1500 DZD</div>
+        <a href="#" class="btn-profil">Voir le profil</a>
+      </div>
+    </div>
+  </div>
+  <div class="card profile-card" data-category="Digital">
+    <div class="carte-panel">
+      <div class="image-container">
+           <img src="images/w4.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+      <div class="infos-panel">
+        <h3>Sara H.</h3>
+        <div class="metier">Créatrice de contenu vidéo/Reels</div>
+        <div class="experience">⭐ 4.8 - 5 ans d'expérience</div>
+        <div class="prix">À partir de 2500 DZD</div>
+        <a href="#" class="btn-profil">Voir le profil</a>
+      </div>
+    </div>
+  </div>
+  <div class="card profile-card" data-category="Digital">
+    <div class="carte-panel">
+      <div class="image-container">
+         <img src="images/m2.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+      <div class="infos-panel">
+        <h3>Omar B.</h3>
+        <div class="metier">Spécialiste Email Marketing</div>
+        <div class="experience">⭐ 4.5 - 2 ans d'expérience</div>
+        <div class="prix">À partir de 2000 DZD</div>
+        <a href="#" class="btn-profil">Voir le profil</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card profile-card" data-category="Creative">
+    <div class="carte-panel">
+       <div class="image-container">
+        <img src="images/w6.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+      <div class="infos-panel">
+        <h3>Yasmine K.</h3>
+        <div class="metier">Graphiste</div>
+        <div class="experience">⭐ 4.6 - 4 ans d'expérience</div>
+        <div class="prix">À partir de 4000 DZD</div>
+        <a href="#" class="btn-profil">Voir le profil</a>
+      </div>
+    </div>
+  </div>
+  <div class="card profile-card" data-category="Digital">
+    <div class="carte-panel">
+       <div class="image-container">
+          <img src="images/m3.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+      <div class="infos-panel">
+        <h3>Karim D.</h3>
+        <div class="metier">Copywriter</div>
+        <div class="experience">⭐ 4.6 - 3 ans d'expérience</div>
+        <div class="prix">À partir de 1500 DZD</div>
+        <a href="#" class="btn-profil">Voir le profil</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card profile-card" data-category="Digital">
+    <div class="carte-panel">
+       <div class="image-container">
+         <img src="images/w7.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+      <div class="infos-panel">
+        <h3>Sara H.</h3>
+        <div class="metier">Video/Reels Content Creator</div>
+        <div class="experience">⭐ 4.8 - 5 ans d'expérience</div>
+        <div class="prix">À partir de 2500 DZD</div>
+        <a href="#" class="btn-profil">Voir le profil</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card profile-card" data-category="Digital">
+    <div class="carte-panel">
+       <div class="image-container">
+          <img src="images/m4.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+      <div class="infos-panel">
+        <h3>Omar B.</h3>
+        <div class="metier">Email Marketing Specialist</div>
+        <div class="experience">⭐ 4.5 - 2 ans d'expérience</div>
+        <div class="prix">À partir de 2000 DZD</div>
+        <a href="#" class="btn-profil">Voir le profil</a>
+      </div>
+    </div>
+  </div>
+  <div class="card profile-card" data-category="Creative">
+    <div class="carte-panel">
+       <div class="image-container">
+          <img src="images/w8.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+      <div class="infos-panel">
+        <h3>Yasmine K.</h3>
+        <div class="metier">Graphiste</div>
+        <div class="experience">⭐ 4.6 - 4 ans d'expérience</div>
+        <div class="prix">À partir de 4000 DZD</div>
+        <a href="#" class="btn-profil">Voir le profil</a>
+      </div>
+    </div>
+  </div>
+  <div class="card profile-card" data-category="Creative">
+    <div class="carte-panel">
+       <div class="image-container">
+          <img src="images/m5.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+      <div class="infos-panel">
+        <h3>Karim D.</h3>
+        <div class="metier">Designer d'affiches</div>
+        <div class="experience">⭐ 4.5 - 3 ans d'expérience</div>
+        <div class="prix">À partir de 3500 DZD</div>
+        <a href="#" class="btn-profil">Voir le profil</a>
+      </div>
+    </div>
+  </div>
+  <div class="card profile-card" data-category="Creative">
+    <div class="carte-panel">
+       <div class="image-container">
+        <img src="images/w9.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+      <div class="infos-panel">
+        <h3>Sara H.</h3>
+        <div class="metier">Designer de couvertures de livres</div>
+        <div class="experience">⭐ 4.7 - 5 ans d'expérience</div>
+        <div class="prix">À partir de 4000 DZD</div>
+        <a href="#" class="btn-profil">Voir le profil</a>
+      </div>
+    </div>
+  </div>
+  <div class="card profile-card" data-category="Creative">
+    <div class="carte-panel">
+       <div class="image-container">
+        <img src="images/m6.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+       </div>
+      <div class="infos-panel">
+        <h3>Omar B.</h3>
+        <div class="metier">Artiste en motion design</div>
+        <div class="experience">⭐ 4.8 - 6 ans d'expérience</div>
+        <div class="prix">À partir de 5000 DZD</div>
+        <a href="#" class="btn-profil">Voir le profil</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card profile-card" data-category="Education">
+    <div class="carte-panel"> <div class="image-container">
+         <img src="images/w10.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+      <div class="infos-panel">
+        <h3>Samira L.</h3>
+        <div class="metier">Enseignante de langues (EN/FR/ES)</div>
+        <div class="experience">⭐ 4.7 - 5 ans d'expérience</div>
+        <div class="prix">À partir de 5000 DZD</div>
+        <a href="#" class="btn-profil">Voir le profil</a>
+      </div>
+    </div>
+  </div>
+  <div class="card profile-card" data-category="Education">
+  <div class="carte-panel"> <div class="image-container">
+        <img src="images/m7.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Bilal M.</h3>
+      <div class="metier">Formateur : Bureautique & Design</div>
+      <div class="experience">⭐ 4.6 - 4 ans d'expérience</div>
+      <div class="prix">À partir de 4000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+<div class="card profile-card" data-category="Education">
+  <div class="carte-panel">
+     <div class="image-container">
+        <img src="images/m8.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Hamza Z.</h3>
+      <div class="metier">Développeuse de cours en ligne</div>
+      <div class="experience">⭐ 4.8 - 6 ans d'expérience</div>
+      <div class="prix">À partir de 6000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+<div class="card profile-card" data-category="Education">
+  <div class="carte-panel">
+     <div class="image-container">
+         <img src="images/m9.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Rachid F.</h3>
+      <div class="metier">Relecteur académique (mémoires, articles)</div>
+      <div class="experience">⭐ 4.9 - 7 ans d'expérience</div>
+      <div class="prix">À partir de 5500 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Administrative">
+  <div class="carte-panel">
+     <div class="image-container">
+         <img src="images/w11.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Sonia B.</h3>
+      <div class="metier">Assistante virtuelle</div>
+      <div class="experience">⭐ 4.6 - 4 ans d'expérience</div>
+      <div class="prix">À partir de 3000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+<div class="card profile-card" data-category="Administrative">
+  <div class="carte-panel">
+     <div class="image-container">
+        <img src="images/w12.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Wafa K.</h3>
+      <div class="metier">Saisie & gestion de données</div>
+      <div class="experience">⭐ 4.5 - 3 ans d'expérience</div>
+      <div class="prix">À partir de 2500 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+<div class="card profile-card" data-category="Administrative">
+  <div class="carte-panel">
+     <div class="image-container">
+          <img src="images/m28.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Imad Z.</h3>
+      <div class="metier">Coordinateur de projets</div>
+      <div class="experience">⭐ 4.7 - 5 ans d'expérience</div>
+      <div class="prix">À partir de 5000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+<div class="card profile-card" data-category="Administrative">
+  <div class="carte-panel">
+     <div class="image-container">
+          <img src="images/w12 (2).jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Yasmine T.</h3>
+      <div class="metier">Comptable à temps partiel</div>
+      <div class="experience">⭐ 4.8 - 6 ans d'expérience</div>
+      <div class="prix">À partir de 4000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="ServiceSector">
+  <div class="carte-panel">
+     <div class="image-container">
+        <img src="images/m11.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Karim M.</h3>
+      <div class="metier">Consultant en marketing à distance</div>
+      <div class="experience">⭐ 4.5 - 4 ans d'expérience</div>
+      <div class="prix">À partir de 5500 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+<div class="card profile-card" data-category="ServiceSector">
+  <div class="carte-panel">
+     <div class="image-container">
+        <img src="images/w13.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Salma A.</h3>
+      <div class="metier">Planificatrice d'événements</div>
+      <div class="experience">⭐ 4.8 - 5 ans d'expérience</div>
+      <div class="prix">À partir de 6000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+<div class="card profile-card" data-category="ServiceSector">
+  <div class="carte-panel">
+     <div class="image-container">
+        <img src="images/m12.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Rachid L.</h3>
+      <div class="metier">Agent de voyage</div>
+      <div class="experience">⭐ 4.7 - 3 ans d'expérience</div>
+      <div class="prix">À partir de 4000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+<div class="card profile-card" data-category="ServiceSector">
+  <div class="carte-panel">
+     <div class="image-container">
+           <img src="images/w14.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Leila M.</h3>
+      <div class="metier">Correctrice de textes</div>
+      <div class="experience">⭐ 4.6 - 4 ans d'expérience</div>
+      <div class="prix">À partir de 3500 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Health">
+  <div class="carte-panel">
+     <div class="image-container">
+        <img src="images/doc0.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+     </div>
+    <div class="infos-panel">
+      <h3>Amine Z.</h3>
+      <div class="metier">Entraîneur de Fitness en ligne</div>
+      <div class="experience">⭐ 4.7 - 3 ans d'expérience</div>
+      <div class="prix">À partir de 5000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+<div class="card profile-card" data-category="Health">
+  <div class="carte-panel">
+     <div class="image-container">
+           <img src="images/do0.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Sarah B.</h3>
+      <div class="metier">Fournisseur de téléthérapie</div>
+      <div class="experience">⭐ 4.8 - 5 ans d'expérience</div>
+      <div class="prix">À partir de 6500 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+<div class="card profile-card" data-category="Health">
+  <div class="carte-panel">
+     <div class="image-container">
+         <img src="images/do1.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Leila K.</h3>
+      <div class="metier">Consultante en nutrition en ligne</div>
+      <div class="experience">⭐ 4.6 - 4 ans d'expérience</div>
+      <div class="prix">À partir de 5500 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+<div class="card profile-card" data-category="ECommerce">
+  <div class="carte-panel">
+     <div class="image-container">
+        <img src="images/m13.jpg " alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Hassan M.</h3>
+      <div class="metier">Spécialiste Dropshipping</div>
+      <div class="experience">⭐ 4.3 - 3 ans d'expérience</div>
+      <div class="prix">À partir de 6000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="ECommerce">
+  <div class="carte-panel">
+     <div class="image-container">
+          <img src="images/m14.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Karim A.</h3>
+      <div class="metier">Responsable E-commerce</div>
+      <div class="experience">⭐ 4.7 - 4 ans d'expérience</div>
+      <div class="prix">À partir de 7500 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+<div class="card profile-card" data-category="ECommerce">
+  <div class="carte-panel">
+     <div class="image-container">
+            <img src="images/w15.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+     </div>
+    <div class="infos-panel">
+      <h3>Rania D.</h3>
+      <div class="metier">Evaluatrice de Produits</div>
+      <div class="experience">⭐ 4.6 - 3 ans d'expérience</div>
+      <div class="prix">À partir de 3000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+<div class="card profile-card" data-category="ECommerce">
+  <div class="carte-panel">
+     <div class="image-container">
+          <img src="images/m15.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Ahmed K.</h3>
+      <div class="metier">Support Client</div>
+      <div class="experience">⭐ 4.5 - 2 ans d'expérience</div>
+      <div class="prix">À partir de 3500 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+<div class="card profile-card" data-category="Translation">
+  <div class="carte-panel">
+     <div class="image-container">
+          <img src="images/m16.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Ahmed M.</h3>
+      <div class="metier">Traducteur de Documents (Arabe ↔ Anglais/Français)</div>
+      <div class="experience">⭐ 4.8 - 5 ans d'expérience</div>
+      <div class="prix">À partir de 4000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+<div class="card profile-card" data-category="Translation">
+  <div class="carte-panel">
+     <div class="image-container">
+          <img src="images/w16.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Rania L.</h3>
+      <div class="metier">Sous-titrage Vidéo</div>
+      <div class="experience">⭐ 4.7 - 4 ans d'expérience</div>
+      <div class="prix">À partir de 3800 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+<div class="card profile-card" data-category="Translation">
+  <div class="carte-panel">
+     <div class="image-container">
+         <img src="images/m17.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Karim B.</h3>
+      <div class="metier">Relecteur Bilingue (Arabe/Français/Anglais)</div>
+      <div class="experience">⭐ 4.6 - 6 ans d'expérience</div>
+      <div class="prix">À partir de 4200 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+<div class="card profile-card" data-category="Innovation">
+  <div class="carte-panel">
+     <div class="image-container">
+        <img src="images/m18.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Omar F.</h3>
+      <div class="metier">Testeur Beta</div>
+      <div class="experience">⭐ 4.3 - 2 ans d'expérience</div>
+      <div class="prix">À partir de 2000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Crafts">
+  <div class="carte-panel">
+     <div class="image-container">
+         <img src="images/tec0.jpg" alt="Handyman">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Handyman</h3>
+      <div class="metier">Repair and Maintenance Expert</div>
+      <div class="experience">⭐ 4.0 - 5 years of experience</div>
+      <div class="prix">À partir de 4000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Crafts">
+  <div class="carte-panel">
+     <div class="image-container">
+         <img src="images/tec1.jpg" alt="Appliance Repair Technician">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>House Appliance Repair Technician</h3>
+      <div class="metier">Repair Household Appliances</div>
+      <div class="experience">⭐ 4.2 - 7 years of experience</div>
+      <div class="prix">À partir de 5000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Crafts">
+  <div class="carte-panel">
+     <div class="image-container">
+        <img src="images/carpinter.jpg" alt="Carpenter">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Carpenter</h3>
+      <div class="metier">Wood Furniture Maker</div>
+      <div class="experience">⭐ 4.7 - 8 years of experience</div>
+      <div class="prix">À partir de 4500 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Crafts">
+  <div class="carte-panel">
+     <div class="image-container">
+          <img src="images/painter.jpg" alt="Painter">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Painter (Interior/Exterior)</h3>
+      <div class="metier">Professional Painter</div>
+      <div class="experience">⭐ 4.3 - 6 years of experience</div>
+      <div class="prix">À partir de 4000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Consulting">
+  <div class="carte-panel">
+     <div class="image-container">
+        <img src="images/w17.jpg" alt="Legal Consultant">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Legal Consultant (Online)</h3>
+      <div class="metier">Consultant juridique</div>
+      <div class="experience">⭐ 4.8 - 5 ans d'expérience</div>
+      <div class="prix">À partir de 7000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+<div class="card profile-card" data-category="Consulting">
+  <div class="carte-panel"> <div class="image-container">
+          <img src="images/m19.jpg" alt="Legal Consultant">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Legal Consultant (Online)</h3>
+      <div class="metier">Online Legal Advisor</div>
+      <div class="experience">⭐ 4.8 - 10 years of experience</div>
+      <div class="prix">À partir de 7000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Family">
+  <div class="carte-panel">
+     <div class="image-container">
+         <img src="images/h0.jpg" alt="Babysitter">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Sara Benali</h3>
+      <div class="metier">Nounou à domicile</div>
+      <div class="experience">⭐ 4.7 - 2 ans d'expérience</div>
+      <div class="prix">À partir de 2500 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Family">
+  <div class="carte-panel">
+     <div class="image-container">
+         <img src="images/h1.jpg" alt="Online Tutor">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Imane Touati</h3>
+      <div class="metier">Tutrice en ligne pour enfants</div>
+      <div class="experience">⭐ 4.8 - 4 ans d'expérience</div>
+      <div class="prix">À partir de 4000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Family">
+  <div class="carte-panel">
+     <div class="image-container">
+         <img src="images/h2.jpg" alt="Elderly Care">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Ali Meziane</h3>
+      <div class="metier">Assistant aux personnes âgées</div>
+      <div class="experience">⭐ 4.6 - 5 ans d'expérience</div>
+      <div class="prix">À partir de 3000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Family">
+  <div class="carte-panel">
+     <div class="image-container">
+            <img src="images/h3.jpg" alt="Parenting Coach">
+            <div class="image-overlay"></div>
+     </div>
+    <div class="infos-panel">
+      <h3>Rania Bouzid</h3>
+      <div class="metier">Coach parental</div>
+      <div class="experience">⭐ 4.9 - 6 ans d'expérience</div>
+      <div class="prix">À partir de 5000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Sales">
+  <div class="carte-panel">
+     <div class="image-container">
+          <img src="images/m20.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Karim Messaoudi</h3>
+      <div class="metier">Télévendeur à distance</div>
+      <div class="experience">⭐ 4.2 - 2 ans d'expérience</div>
+      <div class="prix">À partir de 3500 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Sales">
+  <div class="carte-panel">
+     <div class="image-container">
+         <img src="images/w18.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Yasmine B.</h3>
+      <div class="metier">Spécialiste Relations Publiques</div>
+      <div class="experience">⭐ 4.7 - 4 ans d'expérience</div>
+      <div class="prix">À partir de 5000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Sales">
+  <div class="carte-panel">
+     <div class="image-container">
+          <img src="images/m21.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Ahmed Larbi</h3>
+      <div class="metier">Support commercial e-commerce</div>
+      <div class="experience">⭐ 4.4 - 3 ans d'expérience</div>
+      <div class="prix">À partir de 4000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Sales">
+  <div class="carte-panel">
+     <div class="image-container">
+           <img src="images/w19.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Lina Ferhat</h3>
+      <div class="metier">Ambassadrice de marque</div>
+      <div class="experience">⭐ 4.6 - 2 ans d'expérience</div>
+      <div class="prix">À partir de 4500 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<!-- Exemple pour catégorie Sales -->
+<div class="card profile-card" data-category="Sales">
+  <div class="carte-panel">
+     <div class="image-container">
+         <img src="images/m22.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Rami Aït Messaoud</h3>
+      <div class="metier">Télévendeur</div>
+      <div class="experience">⭐ 4.1 - 2 ans d'expérience</div>
+      <div class="prix">À partir de 3500 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Entertainment">
+  <div class="carte-panel">
+     <div class="image-container">
+        <img src="images/w20.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Nadia Cherif</h3>
+      <div class="metier">Artiste voix-off</div>
+      <div class="experience">⭐ 4.6 - 4 ans d'expérience</div>
+      <div class="prix">À partir de 3000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Accessibility">
+  <div class="carte-panel">
+     <div class="image-container">
+           <img src="images/m23.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Mohamed Benyamina</h3>
+      <div class="metier">Rédacteur de sous-titres</div>
+      <div class="experience">⭐ 4.4 - 3 ans d'expérience</div>
+      <div class="prix">À partir de 2800 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Seasonal">
+  <div class="carte-panel">
+     <div class="image-container">
+         <img src="images/guid.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Leïla Mazari</h3>
+      <div class="metier">Guide touristique saisonnière</div>
+      <div class="experience">⭐ 4.7 - 5 ans d'expérience</div>
+      <div class="prix">À partir de 2000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+<div class="card profile-card" data-category="Entertainment">
+  <div class="carte-panel">
+     <div class="image-container">
+        <img src="images/musicien.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Karim Doumandji</h3>
+      <div class="metier">Musicien pour événements</div>
+      <div class="experience">⭐ 4.9 - 6 ans d'expérience</div>
+      <div class="prix">À partir de 5000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Entertainment">
+  <div class="carte-panel">
+     <div class="image-container">
+         <img src="images/DJ.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Selim Hachemi</h3>
+      <div class="metier">DJ pour soirées virtuelles</div>
+      <div class="experience">⭐ 4.3 - 3 ans d'expérience</div>
+      <div class="prix">À partir de 6000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Entertainment">
+  <div class="carte-panel">
+     <div class="image-container">
+         <img src="images/w21.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Samiha Tazairt</h3>
+      <div class="metier">Artiste caricaturiste</div>
+      <div class="experience">⭐ 4.6 - 4 ans d'expérience</div>
+      <div class="prix">À partir de 4500 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Entertainment">
+  <div class="carte-panel">
+     <div class="image-container">
+         <img src="images/w22.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Rania Zebboudj</h3>
+      <div class="metier">Créatrice de courts-métrages</div>
+      <div class="experience">⭐ 4.8 - 5 ans d'expérience</div>
+      <div class="prix">À partir de 7000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Accessibility">
+  <div class="carte-panel">
+     <div class="image-container">
+            <img src="images/w23.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+     </div>
+    <div class="infos-panel">
+      <h3>Nassima Oulmane</h3>
+      <div class="metier">Rédactrice de sous-titres</div>
+      <div class="experience">⭐ 4.4 - 3 ans d'expérience</div>
+      <div class="prix">À partir de 2800 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Accessibility">
+  <div class="carte-panel">
+     <div class="image-container">
+           <img src="images/m24.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Sofiane Bouzid</h3>
+      <div class="metier">Saisie de données - accès facilité</div>
+      <div class="experience">⭐ 4.1 - 2 ans d'expérience</div>
+      <div class="prix">À partir de 3000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Accessibility">
+  <div class="carte-panel">
+     <div class="image-container">
+        <img src="images/w24.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Samira Mezdari</h3>
+      <div class="metier">Sous-titrage et accessibilité</div>
+      <div class="experience">⭐ 4.6 - 4 ans d'expérience</div>
+      <div class="prix">À partir de 2500 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Accessibility">
+  <div class="carte-panel">
+     <div class="image-container">
+           <img src="images/m25.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+     </div>
+    <div class="infos-panel">
+      <h3>Walid Messaoudi</h3>
+      <div class="metier">Testeur accessibilité web</div>
+      <div class="experience">⭐ 4.7 - 5 ans d'expérience</div>
+      <div class="prix">À partir de 4000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Accessibility">
+  <div class="carte-panel">
+     <div class="image-container">
+        <img src="images/w25.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Houda Zerrouki</h3>
+      <div class="metier">Consultante contenu inclusif</div>
+      <div class="experience">⭐ 4.9 - 6 ans d'expérience</div>
+      <div class="prix">À partir de 5000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Seasonal">
+  <div class="carte-panel">
+     <div class="image-container">
+         <img src="images/m26.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Fouad Touati</h3>
+      <div class="metier">Guide touristique saisonnier</div>
+      <div class="experience">⭐ 4.3 - 3 ans d'expérience</div>
+      <div class="prix">À partir de 2000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Seasonal">
+  <div class="carte-panel">
+     <div class="image-container">
+        <img src="images/w26.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Ilhem Merabet</h3>
+      <div class="metier">Assistante stand événementiel</div>
+      <div class="experience">⭐ 4.4 - 2 ans d'expérience</div>
+      <div class="prix">À partir de 2500 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Seasonal">
+  <div class="carte-panel">
+     <div class="image-container">
+        <img src="images/m27.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Nadir Amrani</h3>
+      <div class="metier">Aide campagne politique</div>
+      <div class="experience">⭐ 4.2 - 2 ans d'expérience</div>
+      <div class="prix">À partir de 3000 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+<div class="card profile-card" data-category="Seasonal">
+  <div class="carte-panel">
+     <div class="image-container">
+        <img src="images/w27.jpg" alt="Photo de profil">
+            <div class="image-overlay"></div>
+          </div>
+    <div class="infos-panel">
+      <h3>Sana Djemai</h3>
+      <div class="metier">Emballage cadeaux de fêtes</div>
+      <div class="experience">⭐ 4.5 - 3 ans d'expérience</div>
+      <div class="prix">À partir de 1500 DZD</div>
+      <a href="#" class="btn-profil">Voir le profil</a>
+    </div>
+  </div>
+</div>
+
+
+</div>
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+      <div class="footer-content">
+          <div class="footer-section">
+              <h3>JobDZ</h3>
+              <p>The leading platform for job opportunities and career growth.</p>
+              <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+          <div class="footer-section">
+              <h3>For Job Seekers</h3>
+              <ul>
+                  <li><a href="#">Browse Jobs</a></li>
+                  <li><a href="#">Create Profile</a></li>
+                  <li><a href="#">Job Alerts</a></li>
+                  <li><a href="#">Career Resources</a></li>
+              </ul>
+          </div>
+          <div class="footer-section">
+              <h3>For Employers</h3>
+              <ul>
+                  <li><a href="#">Post Jobs</a></li>
+                  <li><a href="#">Browse Candidates</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Employer Resources</a></li>
+              </ul>
+          </div>
+          <div class="footer-section">
+              <h3>Company</h3>
+              <ul>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2025 JobDZ. All rights reserved.</p>
+      </div>
+ 
+</footer>
+ <script>
+
+  function filterServices(category) {
+    const cards = document.querySelectorAll('.profile-card');
+    const buttons = document.querySelectorAll('.top-categories-bar button');
+
+    // إزالة التفعيل من كل الأزرار
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    // تفعيل الزر المختار
+    event.target.classList.add('active');
+
+    // عرض أو إخفاء الكروت حسب الفئة
+    cards.forEach(card => {
+      if (category === 'all' || card.dataset.category === category) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+  </script>
+  <script src="js/seekers.js"></script>
+</body>
+</html>

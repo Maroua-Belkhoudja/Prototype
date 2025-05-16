@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employer Informations</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="css/register-employer.css">
+    </head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+         <div class="logo">
+            <a href="home.html">
+                <img src="images/jobdz.png" alt="JobDZ Logo" class="logo-img">
+            </a>
+        </div>
+        
+        <div class="nav-container">
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="employers.html">Employers</a></li>
+                    <li><a href="seekers.html">Seekers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="language-switcher">
+           <button class="language-btn">
+              <i class="fas fa-globe"></i>
+             <span class="current-language">EN</span>
+             <i class="fas fa-chevron-down"></i>
+           </button>
+           <ul class="language-dropdown">
+             <li data-lang="en">English (EN)</li>
+             <li data-lang="fr">Français (FR)</li>
+             <li data-lang="ar">العربية (AR)</li>
+           </ul>
+       </div> 
+        <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+<!-- DISPLAY CLASS-->
+ <div class="display">
+    
+    <!--REGISTER FORM-->
+    <div class="wrapper">
+          <div class="employer-info">
+            <h2>Employer informations:</h2>
+        <form action="php/register-employer.php" method="POST" enctype="multipart/form-data">
+                
+                    <div class="input-style">
+                        <input type="text" name="names" required >
+                        <label >Enterprise/Magasin name</label>
+                    </div>
+
+                    <div class="input-style">
+                        <input type="text" name="founder" required >
+                        <label >Founder</label>
+                    </div>
+
+                    <div class="input-style">
+                        <input type="text" name="speciality" required >
+                        <label >Speciality</label>
+                     </div>
+
+                     <div class="input-style">
+                        <input type="date" name="date" id="date" required 
+                               placeholder="YYYY-MM-DD" pattern="\d{4}-\d{2}-\d{2}">
+                        <label for="date">Creation date</label>
+                    </div>
+                    <div class="input-style">
+                        <input type="text" name="location" required >
+                        <label >Location</label>
+                    </div>
+
+                    <div class="input-style">
+                        <input type="text" name="Branches" required >
+                        <label >Branches (If any)</label>
+                    </div>
+
+                    <div class="input-style">
+                        <input type="text" name="comercial" required>
+                        <label>Do you have a commercial register? (Yes/No)</label>
+                    </div>
+
+                    <div  class="input-style"> 
+                        <label >Company's picture</label>
+                    </div>
+
+                    <div class="input-style">
+                         <input type="file" name="picture"  required >
+                    </div>
+
+                    <button type="submit" class="btnn">Next</button>
+
+                   
+            </form>
+        </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="image-container">
+        <img src="images/portfolio.jpg" alt="Professional Illustration">
+    </div>
+</div>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>JobDz</h3>
+                <p>The leading platform for job opportunities and career growth.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>For Job Seekers</h3>
+                <ul>
+                    <li><a href="#">Browse Jobs</a></li>
+                    <li><a href="#">Create Profile</a></li>
+                    <li><a href="#">Job Alerts</a></li>
+                    <li><a href="#">Career Resources</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>For Employers</h3>
+                <ul>
+                    <li><a href="#">Post Jobs</a></li>
+                    <li><a href="#">Browse Candidates</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Employer Resources</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 JobDz. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+     
+<script src="js/register-employer.js"></script>
+</body>
+</html>

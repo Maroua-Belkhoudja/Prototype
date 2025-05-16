@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Offer Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --color-1: #e6eae7;
+    --color-2: #5ab791;
+}
+
+body {
+    background-color: var(--color-1);
+    color: #333;
+    line-height: 1.6;
+    height: 1900px;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.logo-img {
+    margin-left: -40px;
+    margin-top: 25px;
+    height: 200px; /* أو أي ارتفاع يناسب تصميمك */
+    width: auto;
+}
+
+/* Navigation Container */
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Links */
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: var(--color-2);
+}
+
+/* Language Switcher Styles */
+.language-switcher {
+    position: relative;
+    margin-left: 20px;
+}
+
+.language-btn {
+    background: none;
+    border: none;
+    color: #333;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.language-btn:hover {
+    background: rgba(90, 183, 145, 0.1);
+}
+
+.language-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    margin-top: 5px;
+    width: 150px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    z-index: 1002;
+}
+
+.language-dropdown li {
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.language-dropdown li:hover {
+    background: rgba(90, 183, 145, 0.1);
+}
+
+.language-switcher:hover .language-dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* RTL Support for Arabic */
+[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+[dir="rtl"] .header,
+[dir="rtl"] .nav-links ul,
+[dir="rtl"] .hero-content,
+[dir="rtl"] .footer-content {
+    text-align: right;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+
+        .offer-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            margin-top: 100px;
+        }
+
+        .offer-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 4px solid var(--color-2);
+        }
+
+        .offer-header h1 {
+            color: var(--color-2);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .offer-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .detail-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .detail-card h3 {
+            color: var(--color-2);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .detail-item {
+            margin-bottom: 1rem;
+        }
+
+        .detail-item label {
+            display: block;
+            color: #6c757d;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .detail-item p {
+            color: #2c3e50;
+            font-size: 1.1rem;
+        }
+
+        .offer-description {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        .cv-button-container {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .cv-button {
+            background: var(--color-2);
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(90, 215, 151, 0.767);
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .cv-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(90, 215, 151, 0.767);
+        }
+
+        .cv-button:active {
+            transform: translateY(0);
+        }/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 80px 0 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background-color: var(--color-2);
+}
+
+.footer-section p {
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--color-2);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 25px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+
+/* Animations */
+.animate-from-top {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInDown 0.8s ease forwards;
+}
+
+.animate-from-bottom {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.animate-from-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: fadeInLeft 0.8s ease forwards;
+}
+
+.animate-from-right {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: fadeInRight 0.8s ease forwards;
+}
+
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.4s;
+}
+
+.delay-3 {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeInDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav-links li {
+        margin-left: 20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: transparent;
+        flex-direction: column;
+        padding: 20px;
+        transform: translateY(-150%);
+        transition: transform 0.3s ease;
+        z-index: 999;
+    }
+    
+    .nav-container.active {
+        transform: translateY(0);
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transform: translateY(-150%);
+        transition: transform 0.3s ease;
+        z-index: 999;
+    }
+    
+    .nav-links.active {
+        transform: translateY(0);
+    }
+    
+    .nav-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .nav-links li {
+        margin: 15px 0 !important;
+        text-align: center;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .language-switcher {
+        position: absolute;
+        right: 130px;
+        z-index: 1003; 
+    }
+
+    .language-dropdown {
+        width: 140px;
+    }
+
+    .menu-toggle {
+        position: relative;
+        right: 20px;
+        z-index: 1004;
+    }
+}
+        @media (max-width: 768px) {
+            .cv-button {
+                width: 90%;
+                padding: 1rem;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .offer-container {
+                margin: 1rem;
+                padding: 1rem;
+            }
+
+            .offer-header h1 {
+                font-size: 2rem;
+            }
+
+            .detail-card {
+                padding: 1rem;
+            }
+        }
+        @media (max-width: 768px) {
+    .offer-container {
+        margin: 50px 1rem 1rem;
+        padding: 1rem;
+        position: relative; 
+        z-index: 1; 
+    }
+
+    
+    body {
+        padding-top: 60px; 
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+         <div class="logo">
+            <a href="home.html">
+                <img src="images/jobdz.png" alt="JobDZ Logo" class="logo-img">
+            </a>
+        </div>
+        
+        <div class="nav-container">
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="employers.html">Employers</a></li>
+                    <li><a href="seekers.html">Seekers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="language-switcher">
+            <button class="language-btn">
+                <i class="fas fa-globe"></i>
+                <span class="current-language">EN</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <ul class="language-dropdown">
+                <li data-lang="en">English (EN)</li>
+                <li data-lang="fr">Français (FR)</li>
+                <li data-lang="ar">العربية (AR)</li>
+            </ul>
+          </div> 
+        <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+    <!-- offres -->
+    <div class="offer-container" id="mono">
+        <div class="offer-header">
+            <h1>MONO Electric Company</h1>
+        </div>
+
+        <div class="offer-details">
+            <div class="detail-card">
+                <h3>📌 Basic Information</h3>
+                <div class="detail-item">
+                    <label>Job Type</label>
+                    <p>Presential</p>
+                </div>
+                <div class="detail-item">
+                    <label>Location</label>
+                    <p>Baba hassen, Algiers</p>
+                </div>
+                <div class="detail-item">
+                    <label>Time Period</label>
+                    <p>Part-time : 8am - 2pm</p>
+                </div>
+            </div>
+
+            <div class="detail-card">
+                <h3>💼 Position Details</h3>
+                <div class="detail-item">
+                    <label>Job Title</label>
+                    <p>Software Engineer</p>
+                </div>
+                <div class="detail-item">
+                    <label>Experience Needed</label>
+                    <p>3+ Years</p>
+                </div>
+                <div class="detail-item">
+                    <label>Preferences</label>
+                    <p>Technical Skills, Language Requirements</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="offer-description">
+            <h3>📝 Additional Information</h3>
+            <div class="detail-item" style="margin-top: 1rem;">
+                <p>None</p>
+            </div>
+        </div>
+
+        <div class="cv-button-container">
+            <a href="#apply-now" class="cv-button">
+                📩 Send Your CV
+            </a>
+        </div>
+    </div>
+     <div class="offer-container" id="chaoui">
+        <div class="offer-header">
+            <h1>Aalaf Ibn El Chaoui</h1>
+        </div>
+
+        <div class="offer-details">
+            <div class="detail-card">
+                <h3>📌 Basic Information</h3>
+                <div class="detail-item">
+                    <label>Job Type</label>
+                    <p>Presential</p>
+                </div>
+                <div class="detail-item">
+                    <label>Location</label>
+                    <p>Souagui, Medea</p>
+                </div>
+                <div class="detail-item">
+                    <label>Time Period</label>
+                    <p>Part-time : 7am - 4pm</p>
+                </div>
+            </div>
+
+            <div class="detail-card">
+                <h3>💼 Position Details</h3>
+                <div class="detail-item">
+                    <label>Job Title</label>
+                    <p>Truck Driver</p>
+                </div>
+                <div class="detail-item">
+                    <label>Experience Needed</label>
+                    <p>5+ Years of driving</p>
+                </div>
+                <div class="detail-item">
+                    <label>Preferences</label>
+                    <p>A good driver</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="offer-description">
+            <h3>📝 Additional Information</h3>
+            <div class="detail-item" style="margin-top: 1rem;">
+               <p>The driver must transport the merchandise to and from the store without any shortage or excess.</p> 
+           </div>
+        </div>
+
+        <div class="cv-button-container">
+            <a href="#apply-now" class="cv-button">
+                📩 Send Your CV
+            </a>
+        </div>
+    </div>
+     <div class="offer-container" id="salem">
+        <div class="offer-header">
+            <h1>Superette Salem</h1>
+        </div>
+
+        <div class="offer-details">
+            <div class="detail-card">
+                <h3>📌 Basic Information</h3>
+                <div class="detail-item">
+                    <label>Job Type</label>
+                    <p>Presential</p>
+                </div>
+                <div class="detail-item">
+                    <label>Location</label>
+                    <p>Kouba, Algiers</p>
+                </div>
+                <div class="detail-item">
+                    <label>Time Period</label>
+                    <p>Part-time : 5pm - 11pm</p>
+                </div>
+            </div>
+
+            <div class="detail-card">
+                <h3>💼 Position Details</h3>
+                <div class="detail-item">
+                    <label>Job Title</label>
+                    <p>Seller</p>
+                </div>
+                <div class="detail-item">
+                    <label>Experience Needed</label>
+                    <p>1+ Years</p>
+                </div>
+                <div class="detail-item">
+                    <label>Preferences</label>
+                    <p>Jobless person, single</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="offer-description">
+            <h3>📝 Additional Information</h3>
+            <div class="detail-item" style="margin-top: 1rem;">
+                <p>The seller must has high morals and is far from social ills.</p>
+            </div>
+        </div>
+
+        <div class="cv-button-container">
+            <a href="#apply-now" class="cv-button">
+                📩 Send Your CV
+            </a>
+        </div>
+    </div>
+     <div class="offer-container" id="medical">
+        <div class="offer-header">
+            <h1>Ets Reghmit Medical</h1>
+        </div>
+
+        <div class="offer-details">
+            <div class="detail-card">
+                <h3>📌 Ets Reghmit Medical</h3>
+                <div class="detail-item">
+                    <label>Job Type</label>
+                    <p>Online</p>
+                </div>
+                <div class="detail-item">
+                    <label>Location</label>
+                    <p>Berrouaghia, Medea</p>
+                </div>
+                <div class="detail-item">
+                    <label>Time Period</label>
+                    <p>Part-time : 9pm - 1am</p>
+                </div>
+            </div>
+
+            <div class="detail-card">
+                <h3>💼 Position Details</h3>
+                <div class="detail-item">
+                    <label>Job Title</label>
+                    <p>Social Media Manager</p>
+                </div>
+                <div class="detail-item">
+                    <label>Experience Needed</label>
+                    <p>1+ Years</p>
+                </div>
+                <div class="detail-item">
+                    <label>Preferences</label>
+                    <p>Language Requirements</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="offer-description">
+            <h3>📝 Additional Information</h3>
+            <div class="detail-item" style="margin-top: 1rem;">
+                <p>He/She must respond to messages and comments, publish stories and posts.</p>
+            </div>
+        </div>
+
+        <div class="cv-button-container">
+            <a href="#apply-now" class="cv-button">
+                📩 Send Your CV
+            </a>
+        </div>
+    </div>
+    <div class="offer-container" id="mario">
+        <div class="offer-header">
+            <h1>Mario Dz Shop</h1>
+        </div>
+
+        <div class="offer-details">
+            <div class="detail-card">
+                <h3>📌 Basic Information</h3>
+                <div class="detail-item">
+                    <label>Job Type</label>
+                    <p>Presential</p>
+                </div>
+                <div class="detail-item">
+                    <label>Location</label>
+                    <p>Medea</p>
+                </div>
+                <div class="detail-item">
+                    <label>Time Period</label>
+                    <p>Part-time : 8pm - 1pm</p>
+                </div>
+            </div>
+
+            <div class="detail-card">
+                <h3>💼 Position Details</h3>
+                <div class="detail-item">
+                    <label>Job Title</label>
+                    <p>Seller</p>
+                </div>
+                <div class="detail-item">
+                    <label>Experience Needed</label>
+                    <p>1+ Years</p>
+                </div>
+                <div class="detail-item">
+                    <label>Preferences</label>
+                    <p>Girl</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="offer-description">
+            <h3>📝 Additional Information</h3>
+            <div class="detail-item" style="margin-top: 1rem;">
+                <p>The seller must has high morals and knows how to convince a customer to buy the product.</p>
+            </div>
+        </div>
+
+        <div class="cv-button-container">
+            <a href="#apply-now" class="cv-button">
+                📩 Send Your CV
+            </a>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>JobDz</h3>
+                    <p>The leading platform for job opportunities and career growth.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>For Job Seekers</h3>
+                    <ul>
+                        <li><a href="#">Browse Jobs</a></li>
+                        <li><a href="#">Create Profile</a></li>
+                        <li><a href="#">Job Alerts</a></li>
+                        <li><a href="#">Career Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>For Employers</h3>
+                    <ul>
+                        <li><a href="#">Post Jobs</a></li>
+                        <li><a href="#">Browse Candidates</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Employer Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 JobDZ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+     <!-- Script -->
+    <script src="js/home.js"></script>
+</body>
+</html>
